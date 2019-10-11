@@ -33,16 +33,12 @@ public class SceneViewAdapter extends RecyclerView.Adapter<SceneViewAdapter.Scen
     private Context mContext;
     private ItemListener mListener;
     int checkedPosition = -1;
-    private List<Theme> listTheme;
-    private List<Integer> listPosition;
+
 
     public SceneViewAdapter(Context context, List<Scene> values, ItemListener itemListener) {
         mValues = values;
         mContext = context;
         mListener = itemListener;
-        listTheme = new ArrayList<>();
-        createListTheme();
-        listPosition = new ArrayList<>();
     }
 
 
